@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="usuario" class="com.example.springcoredojo.Entidades.Usuario">
+        <constructor-arg name="alumno" ref="alumno"/>
+    </bean>
+    <bean id="alumno" class="com.example.springcoredojo.Entidades.Alumno">
+        <constructor-arg name="nombre" value="Leslie"/>
+        <constructor-arg name="apellido" value="Aguilera"/>
+        <constructor-arg name="edad" value="22"/>
+    </bean>
+
+
+
+</beans>
